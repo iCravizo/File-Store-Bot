@@ -11,12 +11,6 @@ from datetime import datetime
 
 from config import API_HASH, APP_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL, CHANNEL_ID, PORT
 
-
-name ="""
-TheInsomniacsClub
-"""
-
-
 class Bot(Client):
     def __init__(self):
         super().__init__(
@@ -57,7 +51,7 @@ class Bot(Client):
         except Exception as e:
             self.LOGGER(__name__).warning(e)
             self.LOGGER(__name__).warning(f"Make Sure bot is Admin in DB Channel, and Double check the CHANNEL_ID Value, Current Value {CHANNEL_ID}")
-            self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/TheInsomniacsClub for support")
+            self.LOGGER(__name__).info("\nBot Stopped. https://t.me/TheInsomniacsClub for support")
             sys.exit()
 
         self.set_parse_mode(ParseMode.HTML)
