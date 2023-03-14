@@ -37,7 +37,7 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\n<b>I Only Work for The Insomniacs Club\n\nIf You Want to Use this Bot\n\nDm @The_Insomniacs_Club_Bot</b>")
+START_MSG = os.environ.get("START_MESSAGE", "ʜᴇʟʟᴏ {first}\n\n<b>ɪ ᴏɴʟʏ ᴡᴏʀᴋ ғᴏʀ ᴛʜᴇ ɪɴsᴏᴍɴɪᴀᴄs ᴄʟᴜʙ\n\nɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴀ ʙᴏᴛ ʟɪᴋᴇ ᴛʜɪs\n\nᴛᴇxᴛ 👉 @The_Insomniacs_Club_Bot</b>")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "").split()):
@@ -46,7 +46,7 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to Join Our Main Channel to get Files\n\nKindly Please JOIN & TRY AGAIN</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "ʜᴇʟʟᴏ {first}\n\n<b>ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ᴊᴏɪɴ ᴏᴜʀ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ ᴛᴏ ɢᴇᴛ ғɪʟᴇs\n\nᴋɪɴᴅʟʏ ᴘʟᴇᴀsᴇ ᴊᴏɪɴ & ᴛʀʏ ᴀɢᴀɪɴ</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
